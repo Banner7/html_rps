@@ -5,9 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RPS</title>
     <link rel="stylesheet" href="globle.css" />
-    <script src="script.js"></script>
   </head>
   <body>
-    Hi , this is a simple Rock Paper Scissors game.
+    <div class="text_wrap">
+      <h1>
+        Hi, I'm a simple Rock Paper Scissors game. Click on the buttons below to
+        play!
+      </h1>
+    </div>
+    <div class="btns">
+      <div id="humanchoice">Human</div>
+      <button class="button" id="button1" onclick="playround('rock')">
+        🪨
+      </button>
+      <button class="button" id="button2" onclick="playround('paper')">
+        🧻
+      </button>
+      <button class="button" id="button3" onclick="playround('scissors')">
+        ✂️
+      </button>
+      <div id="computerchoice">None Human</div>
+    </div>
+    <div class="scoreboard">
+      <p id="humanScore">You:</p>
+      <h1 id="result">W/L/T/A</h1>
+      <p id="computerScore">Computer:</p>
+    </div>
+    <div class="finals">
+      <div class="best of">
+        best of
+        <div class="custom-select">
+          <select id="select">
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option selected="selected" value="5">5</option>
+            <option value="7">7</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+      </div>
+      <button class="button" id="reset">⟳</button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
